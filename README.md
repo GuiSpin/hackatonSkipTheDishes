@@ -27,4 +27,6 @@ My Initial Idea: Every time a search is made, you take only the important inform
 There is also the enabled configuration to register on an Eureka Server and allow service discovery making it easier to manage connections.
 
 
-IMPORTANT: I was planning to use MongoDb on the solution, but I had some technical difficulties on my machine to run it so I took a diiferent approach to not waste time trying to work on something that wouldn't be "visible". I used H2 instead as a second alternative.
+IMPORTANT #1: The Google API Key is encapsulated in an Environment Variable, in order to protect my personal key. It should be configured for the project to work.
+
+IMPORTANT #2: I was planning to use MongoDb on the solution, but I had some technical difficulties on my machine to run it so I took a diiferent approach to not waste time trying to work on something that wouldn't be "visible". I used H2 instead as a second alternative.
