@@ -1,4 +1,4 @@
-# hackatonSkipTheDishes
+# Hackaton Skip The Dishes
 The project is to show the usage of different technologies from the stack.
 
 The idea is to have an api where Front-End can consume and access the GoogleApi Nearby Places directly and the api will store this search on database (a few fields) and send it to a queue where it can be consumed by another service (such as a ETL, data storage service).
@@ -7,9 +7,9 @@ The idea is to have an api where Front-End can consume and access the GoogleApi 
 
 There are two controllers on the api, one which performs operations related to security and another with a call to access Google Nearby Places API.
 
-The UserController (related to security) uses the spring security implementation to perform two action: 
-  1 - Register a user passing username and password on a POST request to add the user to the database, with a random generated token assigned to it. Request example: http://localhost:8080/public/users/register?username=user&password=pass
-  2 - Make the login of the user using the same username and password registered and returns the token used to access the secured endpoints. Request example: http://localhost:8080/public/users/login?username=user&password=pass / return "66a93ab2-a6be-4fb4-a6e1-bbc2a44902c4"
+The UserController (related to security) uses the spring security implementation to perform two action:
+ - Register a user passing username and password on a POST request to add the user to the database, with a random generated token assigned to it. Request example: http://localhost:8080/public/users/register?username=user&password=pass
+ - Make the login of the user using the same username and password registered and returns the token used to access the secured endpoints. Request example: http://localhost:8080/public/users/login?username=user&password=pass / return "66a93ab2-a6be-4fb4-a6e1-bbc2a44902c4"
   
 This token should be passed as a header param with name "Authorization" on calls to secured endpoints to be executed.
   
