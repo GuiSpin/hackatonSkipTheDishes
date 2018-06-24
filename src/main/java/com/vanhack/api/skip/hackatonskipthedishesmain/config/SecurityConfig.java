@@ -25,9 +25,9 @@ import org.springframework.security.web.util.matcher.RequestMatcher;
 import static org.springframework.http.HttpStatus.FORBIDDEN;
 import static org.springframework.security.config.http.SessionCreationPolicy.STATELESS;
 
-//@EnableWebSecurity
-//@Configuration
-//@EnableGlobalMethodSecurity(prePostEnabled=true)
+@EnableWebSecurity
+@Configuration
+@EnableGlobalMethodSecurity(prePostEnabled=true)
 public class SecurityConfig  extends WebSecurityConfigurerAdapter {
 
     private static final RequestMatcher PUBLIC_URLS = new OrRequestMatcher(
